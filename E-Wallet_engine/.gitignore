@@ -31,4 +31,30 @@ build/
 
 ### VS Code ###
 .vscode/
+
+DS_Store# =========================
+# 1. OS & IDE Specific
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+.idea/
+*.swp
+.qodana/
+**/.qodana-baseline-gen/
+**/qodana-results*/
+**/qodana.sarif.json
+cache/
+
+# =========================
+# 2. Environment Variables & Secrets
+# =========================
 .env
+.env.*
+!.env.example
+!.env.staging.example
+.staging-state/
+infrastructure/staging/validation-output/
+*.pem
+*.key
+monitoring/k6/tokens.json
