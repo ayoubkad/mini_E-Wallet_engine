@@ -1,7 +1,13 @@
 package com.ewallet.exception;
 
-public class BusinessException extends RuntimeException {
-  public BusinessException(String message) {
-    super(message);
-  }
+import lombok.Getter;
+
+@Getter
+public abstract class BusinessException extends RuntimeException {
+
+
+
+    protected BusinessException(String errorCode, String message) {
+        super(message);
+    }
 }
